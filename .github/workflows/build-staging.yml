@@ -40,9 +40,11 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           # Resource group name
-          resource-group: Product_Zero_DevOps
+          resource-group: pwc-app-infra 
+          #Product_Zero_DevOps
           # AKS cluster name
-          cluster-name: product-zero
+          cluster-name: pwc-infra-k8s
+          #product-zero
 
       - name: Run Helm Deploy
         run: |
